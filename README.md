@@ -99,7 +99,7 @@ Check out the hosted version of this project here: [Live Demo Link](https://dash
 
 - **Reusable Components**: used reusable components created and dynamically rendered.
 - **Dynamic Rendering**: Different instances of the components display varying sets of data.
-- **User Interface**: Designed a clean and visually engaging UI, responsive for both web and mobile devices.
+- **User Interface**: Designed a clean and visually engaging UI, responsive for both web and Tablet devices.
 - **Code Quality**: Followed best practices with well-structured and modular code, adhering to DRY (Don't Repeat Yourself) principles.
 
 ## 📦 Deployment
