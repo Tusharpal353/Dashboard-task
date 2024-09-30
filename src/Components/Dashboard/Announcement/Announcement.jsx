@@ -24,6 +24,10 @@ const Announcement = () => {
       <EventCard />
       <EventCard />
       </div>
+
+      <div className=" flex justify-center font-body font-medium text-[#FF5151] pt-2">
+        <p >See All Announcement</p>
+      </div>
     
     </div>
   );

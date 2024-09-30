@@ -1,3 +1,74 @@
+// import React from "react";
+// import { useSelector } from "react-redux";
+// import Cards from "./Cards";
+// import CardTwo from "./CardTwo";
+// import Announcement from "./Announcement/Announcement";
+// import RecentActivity from "./RecentActivity/RecentActivity";
+// import UpcomingSchedule from "./Upcoming Schedule/UpcomingSchedule";
+
+// const Dashboard = () => {
+//   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
+
+//   return (
+//     <div
+//       className={`
+//         transition-all duration-300 
+//         ${isMenuOpen ? 'ml-[242px] md:ml-[90px] lg:ml-[242px]' : 'ml-0'}
+//         p-4 md:p-6 lg:p-8
+//       `}
+//     >
+//       <h1 className="font-body font-medium text-2xl mb-6">Dashboard</h1>
+//       <div className="flex flex-col gap-6">
+//         <div className="space-y-6">
+//           {/* Three Cards in one line */}
+//           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+//             <Cards
+//               className="bg-[#ffefe7] w-full h-[136px] rounded-lg"
+//               heading="Available Position"
+//               number={24}
+//               description="4 Urgently needed"
+//               paraColor="text-red-800"
+//             />
+//             <Cards
+//               className="bg-[#e8f0fb] w-full h-[136px] rounded-lg"
+//               heading="Jobs Open"
+//               number={10}
+//               description="4 active hiring"
+//               paraColor="text-[#3786F1]"
+//             />
+//             <Cards
+//               className="bg-[#fdebf9] w-full h-[136px] rounded-lg"
+//               heading="New Employees"
+//               number={24}
+//               description="4 Department"
+//               paraColor="text-[#EE61CF]"
+//             />
+//           </div>
+//           {/* Two CardTwo components */}
+//           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+//             <CardTwo />
+//             <CardTwo />
+//           </div>
+//           {/* Announcement */}
+//           <div className="w-full">
+//             <Announcement />
+//           </div>
+//         </div>
+//         {/* RecentActivity and UpcomingSchedule */}
+//         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//           <div className="w-full">
+//             <RecentActivity />
+//           </div>
+//           <div className="w-full">
+//             <UpcomingSchedule />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Dashboard;
 import React from "react";
 import { useSelector } from "react-redux";
 import Cards from "./Cards";
@@ -7,60 +78,63 @@ import RecentActivity from "./RecentActivity/RecentActivity";
 import UpcomingSchedule from "./Upcoming Schedule/UpcomingSchedule";
 
 const Dashboard = () => {
-  // Get the sidebar state from Redux
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
 
   return (
     <div
-      className={`${
-        isMenuOpen ? "ml-64" : "ml-0"
-      } h-screen w-full transition-all duration-300 overflow-hidden grid grid-flow-col space-x-4 col-span-3`}
+      className={`
+        transition-all duration-300 
+        ${isMenuOpen ? 'ml-[242px] md:ml-[90px] lg:ml-[242px]' : 'ml-0'}
+        p-4 md:p-6 lg:p-8
+      `}
     >
-      <div className=" cards-with-3cards pl-8 col-span-0">
-        <h1 className="font-body font-medium text-2xl w-[640px] h-[48px] border-[#E0E0E0]">
-          Dashboard
-        </h1>
-
-        {/* Reduce the gap between the Cards components */}
-        <div className="grid grid-flow-col grid-cols-3 py-4 gap-1 justify-between"> {/* Adjusted the gap here */}
-          <Cards
-            className="bg-[#ffefe7] w-[204px] h-[136px] rounded-lg col-span-1"
-            heading="Available Position"
-            number={24}
-            description="4 Urgently needed"
-            paraColor="text-red-800" // Change number color
-          />
-          <Cards
-            className="bg-[#e8f0fb] p-10 w-[204px] h-[136px] rounded-lg col-span-1"
-            heading="Jobs Open"
-            number={10}
-            description="4 active hiring"
-            paraColor="text-[#3786F1]" // Change number color
-          />
-          <Cards
-            className="bg-[#fdebf9] p-10 w-[204px] h-[136px] rounded-lg col-span-1  "
-            heading="New Employees"
-            number={24}
-            description="4 Department"
-            paraColor="text-[#EE61CF]" // Change number color
-          />
+      <h1 className="font-body font-medium text-2xl mb-6">Dashboard</h1>
+      <div className="flex flex-col lg:flex-row gap-6">
+        <div className="lg:w-2/3 space-y-6">
+          {/* Three Cards in one line */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <Cards
+              className="bg-[#ffefe7] w-full h-[136px] rounded-lg"
+              heading="Available Position"
+              number={24}
+              description="4 Urgently needed"
+              paraColor="text-red-800"
+            />
+            <Cards
+              className="bg-[#e8f0fb] w-full h-[136px] rounded-lg"
+              heading="Jobs Open"
+              number={10}
+              description="4 active hiring"
+              paraColor="text-[#3786F1]"
+            />
+            <Cards
+              className="bg-[#fdebf9] w-full h-[136px] rounded-lg"
+              heading="New Employees"
+              number={24}
+              description="4 Department"
+              paraColor="text-[#EE61CF]"
+            />
+          </div>
+          {/* Two CardTwo components */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+            <CardTwo />
+            <CardTwo />
+          </div>
+          {/* Announcement */}
+          <div className="w-full">
+            <Announcement />
+          </div>
         </div>
-
-        <div className="grid grid-flow-col grid-cols-2">
-          <CardTwo className="grid-col-1" />
-          <CardTwo className="grid-col-1" />
-        </div>
-        <div className="py-4 ">
-          <Announcement />
-        </div>
-      </div>
-
-      {/* Right section */}
-      <div className="col-span-1">
-        <RecentActivity />
-        <div className="py-4">
-
-        <UpcomingSchedule/>
+        {/* RecentActivity and UpcomingSchedule */}
+        <div className="lg:w-1/3 space-y-6 md:space-y-0 lg:space-y-6">
+          <div className="md:flex md:space-x-6 lg:space-x-0 lg:flex-col">
+            <div className="w-full md:w-[250px] lg:w-full mb-6 md:mb-0 lg:mb-6">
+              <RecentActivity />
+            </div>
+            <div className="w-full md:w-[374px] lg:w-full">
+              <UpcomingSchedule />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,4 +142,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
