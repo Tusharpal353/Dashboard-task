@@ -32,9 +32,13 @@ The folder structure for the project is as follows:
 ```
 
 **Diagram of the structure**
+![alt text](image-2.png)
 
-![alt text](image-1.png)
+**Full screen view**
+![alt text](image-3.png)
 
+**Tab sreen view**
+![alt text](image-4.png)
 
 ## 🛠️ Technologies Used
 

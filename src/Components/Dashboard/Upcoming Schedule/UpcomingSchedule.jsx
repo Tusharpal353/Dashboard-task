@@ -4,8 +4,8 @@ import UpcomingCard from "./UpcomingEventCard";
 
 const UpcomingSchedule = () => {
   return (
-    <div className="border border-[#E0E0E0] p-4 w-[374px] h-[319px] rounded-md flex flex-col lg:w-[442px]">
-      <div className="flex justify-between items-center mb-4">
+    <div className="border border-[#E0E0E0] p-4 md:w-full h-[319px] rounded-md flex flex-col lg:w-[442px]">
+      <div className="flex justify-between items-center mb-4 md:w-[full]">
         <h1 className="text-lg font-semibold">Upcoming Schedule</h1>
         <div className="flex items-center space-x-2">
           <label htmlFor="announcement-date" className="text-sm">Today</label>

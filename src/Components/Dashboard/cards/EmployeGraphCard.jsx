@@ -1,6 +1,6 @@
 import React from "react";
 import graph_logo from "../../../Utils/Images/Cards/Group 4.svg";
-const CardTwo = ({ heading, number, description, className }) => {
+const EmployeGraphCard = ({ heading, number, description, className }) => {
   return (
     <div className=" w-[332px] h-[190px] border border-[#E0E0E0] rounded-md pl-4 pt-4 p-[20px]  ">
       <h1 className="text-lg font-medium w-[166px] leading-7 h-[28px] gap: 0px opacity: 0px ">
@@ -31,4 +31,4 @@ const CardTwo = ({ heading, number, description, className }) => {
   );
 };
 
-export default CardTwo;
+export default EmployeGraphCard;
