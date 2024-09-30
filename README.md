@@ -46,7 +46,7 @@ The folder structure for the project is as follows:
 - **CSS**: Styled using regular CSS to match the Figma design.
 - **Redux**: Used this for state management.
 - **Responsive Design**: Media queries were used to make the design responsive, optimized for web and Tabet views.
-- **GitHub Pages / Vercel / Netlify**: The project is hosted for live preview (link included below).
+- **Vercel **: The project is hosted for live preview (link included below).
 
 
 ## ✨ Features
