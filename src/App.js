@@ -14,17 +14,7 @@ function App() {
         <Body/>
 
 
-        {
-          /* 
-          
-          Head
-          Body
-            sidebar
-              menuItems
-            
-          
-          */
-        }
+  
      
 
     </div>
