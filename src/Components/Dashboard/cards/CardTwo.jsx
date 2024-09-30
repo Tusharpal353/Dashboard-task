@@ -1,5 +1,5 @@
 import React from "react";
-import graph_logo from "../../Utils/Images/Cards/Group 4.svg";
+import graph_logo from "../../../Utils/Images/Cards/Group 4.svg";
 const CardTwo = ({ heading, number, description, className }) => {
   return (
     <div className=" w-[332px] h-[190px] border border-[#E0E0E0] rounded-md pl-4 pt-4 p-[20px]  ">
