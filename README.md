@@ -46,7 +46,7 @@ The folder structure for the project is as follows:
 - **CSS**: Styled using regular CSS to match the Figma design.
 - **Redux**: Used this for state management.
 - **Responsive Design**: Media queries were used to make the design responsive, optimized for web and Tabet views.
-- **Vercel **: The project is hosted for live preview (link included below).
+- **Vercel**: The project is hosted for live preview (link included below).
 
 
 ## ✨ Features
@@ -112,6 +112,4 @@ The project was deployed using vercel for a live preview, ensuring the final pro
 - Focused on performance optimization by structuring the CSS for faster rendering.
 - Scalable component structure for potential future expansion or data binding if needed.
 
----
 
-This README highlights your skills in **React**, **CSS**, **responsive design**, and **code quality**, demonstrating that you took a thoughtful approach to the assignment and have a solid understanding of frontend development.
