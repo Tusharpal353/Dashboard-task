@@ -93,7 +93,7 @@ The folder structure for the project is as follows:
 
 ## 🌍 Live Demo
 
-Check out the hosted version of this project here: [Live Demo Link](https://dashboard-task-one.vercel.app/) (replace with actual link)
+Check out the hosted version of this project here: [Live Demo Link](https://dashboard-task-one.vercel.app/) 
 
 ## 📈 Evaluation Metrics (Addressed)
 
