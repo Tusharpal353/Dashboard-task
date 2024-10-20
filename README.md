@@ -2,7 +2,7 @@
 
 
 
-# Frontend Developer Intern - Technical Assignment
+#
 
 This project is a responsive web page built using React.js based on the provided [Figma design](https://tinyurl.com/mv5erx9j). It showcases reusable components, CSS styling, and responsiveness, optimized for both web and Tablet breakpoints. 
 
